@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <title></title>
+  <link rel="stylesheet" href="assets/mdui-v0.4.2/css/mdui.min.css"/>
+  <link rel="stylesheet" href="assets/highlight-9.12.0/styles/github-gist.css"/>
+  <link rel="stylesheet" href="assets/highlight-9.12.0/styles/railscasts.css"/>
+  <link rel="stylesheet" href="assets/docs/css/docs.css"/>
+  <style type="text/css">
+    body{
+      background-image: url("image/bg.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    h1{
+
+      margin: 20px 20px;
+    }
+    img{
+      align:center;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+    }
+    p{
+      margin-left: 20px;
+      font-size: 18px;
+    }
+
+  </style>
+</head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar  mdui-theme-primary-indigo mdui-theme-accent-pink">
+<header class="mdui-appbar mdui-appbar-fixed">
+  <div class="mdui-toolbar mdui-color-theme">
+    <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}"><i class="mdui-icon material-icons">menu</i></span>
+    <a href="index.html" class="mdui-typo-title">文档</a>
+
+  </div>
+</header>
+
+<div class="mdui-drawer" id="main-drawer">
+  <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+    <div class="mdui-collapse-item mdui-collapse-item-open">
+      <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">near_me</i>
+        <div class="mdui-list-item-content">基本功能介绍</div>
+        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+      </div>
+      <div class="mdui-collapse-item-body mdui-list">
+        <a href="zhuye.html" class="mdui-list-item mdui-ripple">主页</a>
+        <a href="taskBar.html" class="mdui-list-item mdui-ripple">底部任务栏</a>
+        <a href="xuanfuqiu.html" class="mdui-list-item mdui-ripple">悬浮球</a>
+        <a href="setting.html" class="mdui-list-item mdui-ripple mdui-list-item-active">设置</a>
+      </div>
+    </div>
+
+    <div class="mdui-collapse-item ">
+      <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-deep-orange">layers</i>
+        <div class="mdui-list-item-content">应用功能介绍</div>
+        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+      </div>
+      <div class="mdui-collapse-item-body mdui-list">
+        <a href="baiban.html" class="mdui-list-item mdui-ripple">白板</a>
+        <a href="file.html" class="mdui-list-item mdui-ripple">文件管理</a>
+        <a href="liulanqi.html" class="mdui-list-item mdui-ripple">浏览器</a>
+        <a href="time.html" class="mdui-list-item mdui-ripple">时钟</a>
+        <a href="calculator.html" class="mdui-list-item mdui-ripple ">计算器</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<a id="anchor-top"></a>
+
+<div class="mdui-container doc-container doc-no-cover">
+  <h1>网络设置</h1>
+  <p>点击主页的设置，进入设置界面，最新开始的是网络设置，wifi的设置，可以点击wifi的按钮打开wifi连接网络</p>
+  <img src="image/无线网络.png">
+  <h1>有线网络</h1>
+  <p>点击有线，打开有线网络的按钮，可以看到当前连接的有线网络的相关信息</p>
+  <img src="image/有线网络.png">
+  <h1>网络状态</h1>
+  <p>点击网络状态，可以查看当前的网络连接状态，以及相关的信息</p>
+  <img src="image/网络状态.png">
+  <h1>对系统精灵的设置</h1>
+  <p>点击通用设置，选择系统精灵，可以选择对悬浮球的操作</p>
+  <img src="image/系统精灵.png">
+  <h1>声音和背光的设置</h1>
+  <p>点击通用设置，选择声音和背光，可以对声音大小和声音模式进行设定，以及对图像亮度和图像模式的设置</p>
+  <img src="image/声音和背光.png">
+  <h1>侧边栏的设定</h1>
+  <p>点击通用设置，选择侧边栏，打开开关则显示如图</p>
+  <img src="image/侧边栏显示.png">
+  <p>点击主页旁边的侧边栏，弹出侧边栏</p>
+  <img src="image/弹出侧边栏.png">
+  <p>点击设置中的侧边栏，关闭侧边栏，则主页侧边栏消失</p>
+  <img src="image/侧边栏.png">
+  <h1>打印机</h1>
+  <p>点击高级，选择打印机，可以看到关于安装打印机的相应介绍</p>
+  <img src="image/打印机.png">
+  <h1>信号源</h1>
+  <p>点击高级，选择信号源，可以看到信号源的信息，可以对信号源进行选择和设置</p>
+  <img src="image/信号源.png">
+  <h1>HDMI设置</h1>
+  <p>点击高级，选择HDMI设置，可以选择开启或者关闭HDCP</p>
+  <img src="image/HDMI设置.png">
+  <h1>USB权限设置</h1>
+  <p>点击高级，选择USB权限，可以选择开启或者关闭USB权限</p>
+  <img src="image/USB权限.png">
+  <h1>日期和时间</h1>
+  <p>点击系统，选择日期和时间，可以对日期和时间进行设定</p>
+  <img src="image/日期和时间.png">
+  <h1>语言和输入法</h1>
+  <p>点击设置，选择系统，再选择语言和输入法，可以对语言和输入法进行设定</p>
+  <img src="image/语言和输入法.png">
+  <h1>电源状态</h1>
+  <p>点击设置，选择系统，再选择电源状态，可以对开机选项、系统休眠、待机、温度检测和定时开关机等进行设定</p>
+  <img src="image/电源状态.png">
+  <h1>系统更新</h1>
+  <p>点击设置，选择系统，再选择系统更新，可以对系统进行检查更新</p>
+  <img src="image/系统更新.png">
+  <h1>系统安全</h1>
+  <p>点击设置，选择系统，再选择系统安全，可以选择开启和关闭锁屏和U盘锁屏</p>
+  <img src="image/系统安全.png">
+  <h1>恢复出厂设置</h1>
+  <p>点击设置，选择系统，再选择恢复出厂设置，可以对本机进行重置</p>
+  <img src="image/恢复出厂设置.png">
+  <h1>关于本机</h1>
+  <p>点击设置，选择系统，再选择关于本机，可以看到本机的信息</p>
+  <img src="image/关于本机.png">
+</div>
+
+
+
+<div class="doc-footer-nav">
+  <div class="mdui-container">
+    <div class="mdui-row">
+            <a href="xuanfuqiu.html" class="mdui-ripple mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left">
+        <div class="doc-footer-nav-text">
+          <i class="mdui-icon material-icons">arrow_back</i>
+          <span class="doc-footer-nav-direction mdui-hidden-xs-down">Previous</span>
+          <div class="doc-footer-nav-chapter mdui-hidden-xs-down">悬浮球</div>
+        </div>
+      </a>
+
+            <a href="baiban.html" class="mdui-ripple mdui-col-xs-10 mdui-col-sm-6 doc-footer-nav-right">
+        <div class="doc-footer-nav-text">
+          <i class="mdui-icon material-icons">arrow_forward</i>
+          <span class="doc-footer-nav-direction">Next</span>
+          <div class="doc-footer-nav-chapter">白板</div>
+        </div>
+      </a>
+          </div>
+  </div>
+</div>
+
+
+
+<script src="assets/smooth-scroll-11.1.0/smooth-scroll.min.js"></script>
+<script src="assets/holder-2.9.4/holder.min.js"></script>
+<script src="assets/highlight-9.12.0/highlight.pack.js"></script>
+<script src="assets/mdui-v0.4.2/js/mdui.min.js"></script>
+<script>var $$ = mdui.JQ;</script>
+<script src="assets/docs/js/docs.js"></script>
+
+<script>
+
+  var $$ = mdui.JQ;
+  $$('#demo-jq-showoverlay').on('click', function () {
+    $$.showOverlay();
+    setTimeout(function () {
+      $$.hideOverlay();
+    }, 2000);
+  });
+
+  $$('#demo-jq-lockscreen').on('click', function () {
+    $$.lockScreen();
+    setTimeout(function () {
+      $$.unlockScreen();
+    }, 2000);
+  });
+</script>

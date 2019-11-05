@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <title>JavaScript 全局方法 - MDUI 开发文档, Material Design 前端框架</title>
+  <link rel="stylesheet" href="assets/mdui-v0.4.2/css/mdui.min.css"/>
+  <link rel="stylesheet" href="assets/highlight-9.12.0/styles/github-gist.css"/>
+  <link rel="stylesheet" href="assets/highlight-9.12.0/styles/railscasts.css"/>
+  <link rel="stylesheet" href="assets/docs/css/docs.css"/>
+  <style type="text/css">
+    body{
+      background-image: url("image/bg.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    h1{
+
+      margin: 20px 20px;
+    }
+    img{
+      align:center;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+    }
+    p{
+      margin-left: 20px;
+      font-size: 18px;
+    }
+
+  </style>
+</head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar  mdui-theme-primary-indigo mdui-theme-accent-pink">
+<header class="mdui-appbar mdui-appbar-fixed">
+  <div class="mdui-toolbar mdui-color-theme">
+    <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}"><i class="mdui-icon material-icons">menu</i></span>
+    <a href="index.html" class="mdui-typo-title">文档</a>
+  </div>
+</header>
+
+<div class="mdui-drawer" id="main-drawer">
+  <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+    <div class="mdui-collapse-item">
+      <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">near_me</i>
+        <div class="mdui-list-item-content">基本功能介绍</div>
+        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+      </div>
+      <div class="mdui-collapse-item-body mdui-list">
+        <a href="zhuye.html" class="mdui-list-item mdui-ripple">主页</a>
+        <a href="taskBar.html" class="mdui-list-item mdui-ripple ">底部任务栏</a>
+        <a href="xuanfuqiu.html" class="mdui-list-item mdui-ripple ">悬浮球</a>
+        <a href="setting.html" class="mdui-list-item mdui-ripple ">设置</a>
+      </div>
+    </div>
+
+    <div class="mdui-collapse-item mdui-collapse-item-open">
+      <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-deep-orange">layers</i>
+        <div class="mdui-list-item-content">应用功能介绍</div>
+        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+      </div>
+      <div class="mdui-collapse-item-body mdui-list">
+        <a href="baiban.html" class="mdui-list-item mdui-ripple mdui-list-item-active">白板</a>
+        <a href="file.html" class="mdui-list-item mdui-ripple">文件管理</a>
+        <a href="liulanqi.html" class="mdui-list-item mdui-ripple ">浏览器</a>
+        <a href="time.html" class="mdui-list-item mdui-ripple ">时钟</a>
+        <a href="calculator.html" class="mdui-list-item mdui-ripple ">计算器</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<a id="anchor-top"></a>
+
+<div class="mdui-container doc-container">
+  <h1>白板</h1>
+  <p>点击主页的白板图标进入白板应用</p>
+  <img src="image/主页图标.png">
+  <h1>画笔</h1>
+  <p>点击下面的画笔按钮，选择画笔的种类，即可在白板上写和画</p>
+  <img src="image/画笔.png">
+  <h1>划线</h1>
+  <p>选择画笔之后，可以在白板上单指或者多指进行操作，也可以用专用笔，可以进行任意画线</p>
+  <img src="image/划线.png">
+  <h1>橡皮擦</h1>
+  <p>点击橡皮按钮，如图所示，然后对想要擦除的地方进行拖动擦除即可</p>
+  <img src="image/橡皮擦.png">
+  <h1>指定图线擦除</h1>
+  <p>点击橡皮按钮，再点击图形擦除按钮，即可完成擦除</p>
+  <img src="image/指定图线擦除.png">
+  <h1>规则图形</h1>
+  <p>点击如图所示按钮，弹出一个弹窗，可以选择箭头或者规则的圆或者方框，并且可以对线条的粗细进行调节</p>
+  <img src="image/规则图形.png">
+  <h1>选中</h1>
+  <p>点击如图所示按钮，点击白板中的某个曲线，即选中某个图形，可以将选中的图形进行任意的拖拽</p>
+  <img src="image/选中.png">
+  <h1>撤销</h1>
+  <p>点击如图所示红色所选按钮，可以撤销上步骤操作，点击图中绿色所选按钮，即可前一步操作</p>
+  <img src="image/撤销.png">
+  <h1>菜单栏按钮</h1>
+  <p>点击如图所示按钮，会弹出一个弹窗，里面有对现书写的批注的一些操作</p>
+  <img src="image/菜单栏按钮.png">
+  <h1>新建文件</h1>
+  <p>点击弹窗中如图所示按钮，会新建一个白板文件</p>
+  <img src="image/新建文件按钮.png">
+  <img src="image/新建文件.png">
+  <h1>打开文件</h1>
+  <p>点击弹窗中如图所示按钮，会打开文件管理弹窗，选择要打开的白板文件，即可对相应的文件再次修改</p>
+  <img src="image/打开文件按钮.png">
+  <img src="image/打开文件.png">
+  <h1>保存文件</h1>
+  <p>点击弹窗中如图所示按钮，会保存文件</p>
+  <img src="image/保存文件按钮.png">
+  <h1>导出图片</h1>
+  <p>点击弹窗中如图所示按钮，会将图片导出，然后选择相应的存储设备即可</p>
+  <img src="image/导出图片按钮.png">
+  <img src="image/导出图片.png">
+  <h1>发送邮件</h1>
+  <p>点击弹窗中如图所示按钮，设置好要发送到的邮件地址即可</p>
+  <img src="image/发送邮件按钮.png">
+  <img src="image/发送邮件.png">
+  <h1>设置背景</h1>
+  <p>点击弹窗中如图所示按钮，即可选择喜欢的图片替换当前图片</p>
+  <img src="image/设置背景按钮.png">
+  <img src="image/设置背景.png">
+  <h1>关于白板</h1>
+  <p>点击弹窗中如图所示按钮，即可查询到关于白板应用的信息</p>
+  <img src="image/关于白板按钮.png">
+  <img src="image/关于白板.png">
+  <h1>退出白板</h1>
+  <p>点击弹窗中如图所示按钮，即可退出白板应用</p>
+  <img src="image/退出白板.png">
+</div>
+
+
+
+<div class="doc-footer-nav">
+  <div class="mdui-container">
+    <div class="mdui-row">
+      <a href="setting.html" class="mdui-ripple mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left">
+        <div class="doc-footer-nav-text">
+          <i class="mdui-icon material-icons">arrow_back</i>
+          <span class="doc-footer-nav-direction mdui-hidden-xs-down">Previous</span>
+          <div class="doc-footer-nav-chapter mdui-hidden-xs-down">设置</div>
+        </div>
+      </a>
+
+      <a href="file.html" class="mdui-ripple mdui-col-xs-10 mdui-col-sm-6 doc-footer-nav-right">
+        <div class="doc-footer-nav-text">
+          <i class="mdui-icon material-icons">arrow_forward</i>
+          <span class="doc-footer-nav-direction">Next</span>
+          <div class="doc-footer-nav-chapter">文件管理</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="assets/smooth-scroll-11.1.0/smooth-scroll.min.js"></script>
+<script src="assets/holder-2.9.4/holder.min.js"></script>
+<script src="assets/highlight-9.12.0/highlight.pack.js"></script>
+<script src="assets/mdui-v0.4.2/js/mdui.min.js"></script>
+<script>var $$ = mdui.JQ;</script>
+<script src="assets/docs/js/docs.js"></script>
+

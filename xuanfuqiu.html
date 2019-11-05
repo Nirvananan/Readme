@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <title></title>
+  <link rel="stylesheet" href="assets/mdui-v0.4.2/css/mdui.min.css"/>
+  <link rel="stylesheet" href="assets/highlight-9.12.0/styles/github-gist.css"/>
+  <link rel="stylesheet" href="assets/highlight-9.12.0/styles/railscasts.css"/>
+  <link rel="stylesheet" href="assets/docs/css/docs.css"/>
+  <style type="text/css">
+    body{
+      background-image: url("image/bg.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    h1{
+
+      margin: 20px 20px;
+    }
+    img{
+      align:center;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+    }
+    p{
+      margin-left: 20px;
+      font-size: 18px;
+    }
+
+  </style>
+</head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar  mdui-theme-primary-indigo mdui-theme-accent-pink">
+<header class="mdui-appbar mdui-appbar-fixed">
+  <div class="mdui-toolbar mdui-color-theme">
+    <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}"><i class="mdui-icon material-icons">menu</i></span>
+    <a href="index.html" class="mdui-typo-title">文档</a>
+
+  </div>
+</header>
+
+<div class="mdui-drawer" id="main-drawer">
+  <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+    <div class="mdui-collapse-item mdui-collapse-item-open">
+      <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">near_me</i>
+        <div class="mdui-list-item-content">基本功能介绍</div>
+        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+      </div>
+      <div class="mdui-collapse-item-body mdui-list">
+        <a href="zhuye.html" class="mdui-list-item mdui-ripple">主页</a>
+        <a href="taskBar.html" class="mdui-list-item mdui-ripple">底部任务栏</a>
+        <a href="xuanfuqiu.html" class="mdui-list-item mdui-ripple mdui-list-item-active">悬浮球</a>
+        <a href="setting.html" class="mdui-list-item mdui-ripple ">设置</a>
+      </div>
+    </div>
+
+    <div class="mdui-collapse-item ">
+      <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-deep-orange">layers</i>
+        <div class="mdui-list-item-content">应用功能介绍</div>
+        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+      </div>
+      <div class="mdui-collapse-item-body mdui-list">
+        <a href="baiban.html" class="mdui-list-item mdui-ripple">白板</a>
+        <a href="file.html" class="mdui-list-item mdui-ripple">文件管理</a>
+        <a href="liulanqi.html" class="mdui-list-item mdui-ripple">浏览器</a>
+        <a href="time.html" class="mdui-list-item mdui-ripple">时钟</a>
+        <a href="calculator.html" class="mdui-list-item mdui-ripple ">计算器</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<a id="anchor-top"></a>
+
+<div class="mdui-container doc-container doc-no-cover">
+    <h1>悬浮球</h1>
+    <p>悬浮球会出现在屏幕的最右侧，按住悬浮球不动，可以拖到屏幕任意位置，如图所示</p>
+    <img src="image/悬浮球.png">
+    <h1>打开悬浮球</h1>
+    <p>轻点悬浮球，经过一个流畅的动画悬浮球的按钮打开，如图所示</p>
+    <img src="image/点开悬浮球.png">
+    <h1>打开批注</h1>
+    <p>点击如图所示的按钮，即可打开批注</p>
+    <img src="image/批注.png">
+    <h1>画笔</h1>
+    <p>点击批注按钮之后会自动进入画笔，可以在屏幕上随意写画，还可以调整画笔的粗细和颜色</p>
+    <img src="image/批注画笔.png">
+    <p>在屏幕上写字</p>
+    <img src="image/写字.png">
+    <h1>打开橡皮擦</h1>
+    <p>点击橡皮擦按钮，即可打开橡皮擦</p>
+    <img src="image/批注橡皮擦按钮.png">
+    <h1>橡皮擦擦除</h1>
+    <p>按住某个位置不动，会出现橡皮擦，拖动橡皮擦擦除想要清除的位置即可</p>
+    <img src="image/批注橡皮擦擦除.png">
+    <h1>分享批注</h1>
+    <p>点击图中分享按钮即可打开分享界面</p>
+    <img src="image/批注分享.png">
+    <p>在批注分享界面可以选择不同的保存方式，可以选择保存到云端或者保存到u盘，或者通过二维码分享，还可以进行邮件发送</p>
+    <img src="image/批注分享.png">
+    <h1>批注翻页</h1>
+    <p>点击图中所标识的按钮即可对批注进行上下翻页</p>
+    <img src="image/批注翻页.png">
+    <h1>退出批注</h1>
+    <p>点击图中所标识的按钮即可退出批注</p>
+    <img src="image/批注退出.png">
+    <h1>切换信源</h1>
+    <p>点击图中所标识的按钮即可快速切换当前信源</p>
+    <img src="image/悬浮球切换信源.png">
+    <h1>设置</h1>
+    <p>点击图中所标识的按钮即可快速打开设置界面</p>
+    <img src="image/悬浮球设置.png">
+    <h1>添加应用</h1>
+    <p>点击图中所标识的按钮即可添加应用按钮到悬浮球</p>
+    <img src="image/悬浮球添加应用.png">
+    <p>点开添加按钮后会出现一个应用弹窗，显示可以添加到悬浮球的应用</p>
+    <img src="image/添加应用.png">
+    <h1>home键</h1>
+    <p>点击图中所标识的按钮即可退出所有程序回到桌面</p>
+    <img src="image/home键.png">
+    <h1>返回键</h1>
+    <p>点击图中所标识的按钮即可返回上一步操作，返回键</p>
+    <img src="image/悬浮球返回键.png">
+
+</div>
+
+
+
+<div class="doc-footer-nav">
+  <div class="mdui-container">
+    <div class="mdui-row">
+            <a href="taskBar.html" class="mdui-ripple mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left">
+        <div class="doc-footer-nav-text">
+          <i class="mdui-icon material-icons">arrow_back</i>
+          <span class="doc-footer-nav-direction mdui-hidden-xs-down">Previous</span>
+          <div class="doc-footer-nav-chapter mdui-hidden-xs-down">底部任务栏</div>
+        </div>
+      </a>
+
+            <a href="setting.html" class="mdui-ripple mdui-col-xs-10 mdui-col-sm-6 doc-footer-nav-right">
+        <div class="doc-footer-nav-text">
+          <i class="mdui-icon material-icons">arrow_forward</i>
+          <span class="doc-footer-nav-direction">Next</span>
+          <div class="doc-footer-nav-chapter">设置</div>
+        </div>
+      </a>
+          </div>
+  </div>
+</div>
+
+
+
+<script src="assets/smooth-scroll-11.1.0/smooth-scroll.min.js"></script>
+<script src="assets/holder-2.9.4/holder.min.js"></script>
+<script src="assets/highlight-9.12.0/highlight.pack.js"></script>
+<script src="assets/mdui-v0.4.2/js/mdui.min.js"></script>
+<script>var $$ = mdui.JQ;</script>
+<script src="assets/docs/js/docs.js"></script>
+
+<script>
+
+  var $$ = mdui.JQ;
+  $$('#demo-jq-showoverlay').on('click', function () {
+    $$.showOverlay();
+    setTimeout(function () {
+      $$.hideOverlay();
+    }, 2000);
+  });
+
+  $$('#demo-jq-lockscreen').on('click', function () {
+    $$.lockScreen();
+    setTimeout(function () {
+      $$.unlockScreen();
+    }, 2000);
+  });
+</script>
